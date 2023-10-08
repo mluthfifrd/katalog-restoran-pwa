@@ -4,8 +4,10 @@ import { createRestoItemTemplate } from '../templates/template-creator'
 const FavResto = {
   async render() {
     return `
-      <h2>Your Favorite Restaurant</h2>
-      <div id="restos" class="restos">
+      <div class="content">
+        <h2>Your Favorite Restaurant</h2>
+        <div id="restos" class="restos">
+      </div>
     `
   },
 

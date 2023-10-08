@@ -11,10 +11,12 @@ import LikeButtonInitiator from '../../utils/like-button-initiator'
 const DetailResto = {
   async render() {
     return `
-      <h2>Detail Resto Page</h2>
-      <div id="resto" class="resto"></div>
-      <div id="likeButtonContainer"></div>
-      <div id="addReviewCustomer"></div>
+      <div class="content">
+        <h2>Detail Resto Page</h2>
+        <div id="resto" class="resto"></div>
+        <div id="likeButtonContainer"></div>
+        <div id="addReviewCustomer"></div>
+      </div>
     `
   },
 
