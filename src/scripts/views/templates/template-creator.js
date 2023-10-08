@@ -119,6 +119,9 @@ const createLikedButtonTemplate = () => `
 const createAddRestoReviewTemplate = () => `
   <div class="resto-customer-review">
     <div class="reviewForm">
+      <div class="add__review__description">
+        <h3>Add Review</h3>
+      </div>
       <form id="reviewForm">
         <label for="name">Name :</label>
         <input type="text" id="name" name="name" required>
