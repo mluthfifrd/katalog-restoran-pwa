@@ -10,6 +10,12 @@ const app = new App({
   content: document.querySelector('#mainContent')
 })
 
+document.querySelector('#skip-link').addEventListener('click', (e) => {
+  e.preventDefault()
+  const mainContent = document.querySelector('#mainContent')
+  mainContent.scrollIntoView({ behavior: 'smooth' })
+})
+
 window.addEventListener('hashchange', () => {
   app.renderPage()
 })
