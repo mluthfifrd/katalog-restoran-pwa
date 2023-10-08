@@ -10,10 +10,10 @@ const app = new App({
   content: document.querySelector('#mainContent')
 })
 
-document.querySelector('#skip-link').addEventListener('click', (e) => {
+const skipLinkElement = document.querySelector('.skip-link')
+skipLinkElement.addEventListener('click', (e) => {
   e.preventDefault()
-  const mainContent = document.querySelector('#mainContent')
-  mainContent.scrollIntoView({ behavior: 'smooth' })
+  document.querySelector('#mainContent').focus()
 })
 
 window.addEventListener('hashchange', () => {
